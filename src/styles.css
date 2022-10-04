@@ -1,4 +1,44 @@
-h1 {
-  color: white;
-  background-color: black;
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 160px 1fr 80px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Header"
+    "Restaurant"
+    "Menu"
+    "Footer";
+}
+
+.Menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Menu-Categories"
+    "Menu-Items";
+  grid-area: Menu;
+}
+
+.Menu-Categories {
+  grid-area: Menu-Categories;
+}
+
+.Menu-Items {
+  grid-area: Menu-Items;
+}
+
+.Restaurant {
+  grid-area: Restaurant;
+}
+
+.Header {
+  grid-area: Header;
+}
+
+.Footer {
+  grid-area: Footer;
 }
