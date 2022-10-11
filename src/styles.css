@@ -16,6 +16,22 @@
   background: white;
 }
 
+.header {
+  grid-area: Header;
+  display: grid;
+  background-color: var(--main-bg-color);
+  align-content: center;
+  text-align: center;
+}
+
+.header-restaurant {
+  grid-area: Restaurant;
+  display: grid;
+  background-color: var(--main-bg-color);
+  align-content: center;
+  text-align: center;
+}
+
 .Menu {
   display: grid;
   grid-template-columns: 1fr;
@@ -34,22 +50,33 @@
 
 .menu-items {
   grid-area: Menu-Items;
+  display: flex;
+  column-gap: 20px;
 }
 
-.header-restaurant {
-  grid-area: Restaurant;
+.item-card {
   display: grid;
-  background-color: var(--main-bg-color);
-  align-content: center;
+  height: 20vw;
+  background: whitesmoke;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.item-name {
+  grid-area: Item-Name;
   text-align: center;
 }
 
-.header {
-  grid-area: Header;
-  display: grid;
-  background-color: var(--main-bg-color);
-  align-content: center;
-  text-align: center;
+.item-price {
+  grid-area: Item-Price;
+}
+
+.item-description {
+  grid-area: Item-Desc;
+}
+
+.item-image {
+  grid-area: Item-Image;
 }
 
 .footer {
