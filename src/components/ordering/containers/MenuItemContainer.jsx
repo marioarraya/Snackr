@@ -2,8 +2,6 @@ import React, { useState, useEffect, useContext } from 'react';
 import ItemCard from '../components/ItemCard.jsx';
 import { InfoContext } from './OrderingContainer.jsx';
 
-
-
 export default function MenuItemContainer() {
   const [menuItems, setMenuItems] = useContext(InfoContext);
   const items = [];

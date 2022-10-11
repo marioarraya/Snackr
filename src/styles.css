@@ -1,14 +1,19 @@
-.container {
+:root {
+  --main-bg-color: whitesmoke;
+}
+
+.grid-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 80px 160px 1fr 80px;
-  gap: 0px 0px;
+  gap: 20px;
   grid-auto-flow: row;
   grid-template-areas:
     "Header"
     "Restaurant"
     "Menu"
     "Footer";
+  background: white;
 }
 
 .Menu {
@@ -23,22 +28,34 @@
   grid-area: Menu;
 }
 
-.Menu-Categories {
+.menu-categories {
   grid-area: Menu-Categories;
 }
 
-.Menu-Items {
+.menu-items {
   grid-area: Menu-Items;
 }
 
-.Restaurant {
+.header-restaurant {
   grid-area: Restaurant;
+  display: grid;
+  background-color: var(--main-bg-color);
+  align-content: center;
+  text-align: center;
 }
 
-.Header {
+.header {
   grid-area: Header;
+  display: grid;
+  background-color: var(--main-bg-color);
+  align-content: center;
+  text-align: center;
 }
 
-.Footer {
+.footer {
   grid-area: Footer;
+  background-color: var(--main-bg-color);
+  display: grid;
+  align-content: center;
+  text-align: center;
 }

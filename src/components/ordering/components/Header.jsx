@@ -7,8 +7,11 @@ function Header() {
     <>
       <div className="header">
         <Navigation />
+      </div>
+      <div className="header-restaurant">
         <RestaurantHeader />
       </div>
+
     </>
   )
 }
