@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap');
+
 :root {
   --main-bg-color: whitesmoke;
 }
 
 body {
   margin: 20px;
+  font-family: Roboto;
 }
 
 #app {
@@ -74,28 +77,47 @@ body {
     "Item-Pic Item-Pic Item-Price Item-Price Item-Price";
   height: 15vw;
   min-height: 150px;
-  max-height: 200px;
+  max-height: 250px;
   width: 100%;
   background: whitesmoke;
-  border-radius: 15px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.item-card:hover {
+  cursor: pointer;
+  box-shadow: 1px 0px 15px #00000040;
+
 }
 
 .item-name {
   grid-area: Item-Title;
+  padding: 20px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .item-price {
   grid-area: Item-Price;
+  padding: 20px;
+  font-size: 1.3em;
   justify-self: flex-end;
   align-self: end;
 }
 
 .item-description {
   grid-area: Item-Desc;
+  padding: 20px;
+  font-size: 1.1em;
 }
 
 .item-image {
   grid-area: Item-Pic;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  background-size: cover;
+  background-position: center;
 }
 
 .footer {
