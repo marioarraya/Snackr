@@ -10,21 +10,22 @@ const initialState = [
   {
     name: "Rustic Ciabatta",
     price: "$6",
-    description: "Warm, brushed with EVOO & sprinkled with thyme; stone-baked."
+    description: "Warm, brushed with EVOO & sprinkled with thyme; stone-baked.",
+    img_url: "https://i.ibb.co/12JRSTr/rustic-olive-rolls.jpg"
   },
   {
     name: "Nonna's Pie",
     price: "$24",
-    description: "Baked at 500 degrees, the way grandma used to make; fresh marinara & aged parmesan."
+    description: "Baked at 500 degrees, the way grandma used to make; fresh marinara & aged parmesan.",
+    img_url: "https://i.ibb.co/pX5yvvm/Grandma-Pie.jpg"
   },
   {
     name: "Kind Donuts",
     price: "$12",
-    description: "A true baker's dozen; decadently assorted, sweet but not cloying; perfect with coffee."
+    description: "A true baker's dozen; decadently assorted, sweet but not cloying; perfect with coffee.",
+    img_url: "https://i.ibb.co/GcT9C5g/daylight-assorted.jpg"
   }
 ]
-
-
 
 function OrderingContainer() {
   const [menuItems, setMenuItems] = useState(initialState);

@@ -6,6 +6,10 @@ body {
   margin: 20px;
 }
 
+#app {
+  height: 97vh;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -18,6 +22,7 @@ body {
     "Menu"
     "Footer";
   background: white;
+  height: 100%;
 }
 
 .header {
@@ -60,7 +65,16 @@ body {
 
 .item-card {
   display: grid;
-  height: 20vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Item-Pic Item-Pic Item-Title Item-Title Item-Title"
+    "Item-Pic Item-Pic Item-Desc Item-Desc Item-Desc"
+    "Item-Pic Item-Pic Item-Price Item-Price Item-Price";
+  height: 15vw;
+  min-height: 150px;
+  max-height: 200px;
   width: 100%;
   background: whitesmoke;
   border-radius: 15px;
@@ -68,12 +82,13 @@ body {
 }
 
 .item-name {
-  grid-area: Item-Name;
-  text-align: center;
+  grid-area: Item-Title;
 }
 
 .item-price {
   grid-area: Item-Price;
+  justify-self: flex-end;
+  align-self: end;
 }
 
 .item-description {
@@ -81,7 +96,7 @@ body {
 }
 
 .item-image {
-  grid-area: Item-Image;
+  grid-area: Item-Pic;
 }
 
 .footer {
