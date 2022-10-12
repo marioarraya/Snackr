@@ -2,6 +2,10 @@
   --main-bg-color: whitesmoke;
 }
 
+body {
+  margin: 20px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -57,6 +61,7 @@
 .item-card {
   display: grid;
   height: 20vw;
+  width: 100%;
   background: whitesmoke;
   border-radius: 15px;
   padding: 20px;
