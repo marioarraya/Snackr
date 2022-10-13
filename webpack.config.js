@@ -5,10 +5,7 @@ const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const config = {
-  entry: [
-    'react-hot-loader/patch',
-    './src/index.js'
-  ],
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
@@ -58,11 +55,6 @@ const config = {
         ]
       }
     ]
-  },
-  devServer: {
-    'static': {
-      directory: './dist'
-    }
   },
   plugins: [
     new HtmlWebpackPlugin({
